@@ -1,0 +1,20 @@
+// All colors in project
+:root {
+  --white-text: rgb(255,255,255,1);
+  --black-text: rgb(33,33,33,1);
+  --grey-text: rgb(117,117,117,1);
+  --grey-text-op60: rgb(255,255,255,0.6);
+  
+  --light-grey: rgb(175,177,184,1);
+  
+  --back-light-black: rgb(47,48,58,1);
+  --back-light-black-op80: rgba(47, 48, 58, 0.8);
+  --back-light-grey: rgb(245,244,250,1);
+  --back-blue: rgb(33,150,243,1);
+  --back-light-grey-op10: rgb(255,255,255,0.1);
+  
+  --border-light-grey: rgb(236, 236, 236, 1);
+  --border-light-grey2: rgb(238, 238, 238, 1);
+  
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}

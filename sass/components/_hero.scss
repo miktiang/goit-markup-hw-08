@@ -1,0 +1,65 @@
+// Hero in index.html
+.hero {
+  background: var(--back-light-black);
+  color: var(--white-text);
+  width: 1600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.hero__container {
+  text-align: center;
+  padding: 200px 0;
+  
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url('../images/hero-img.jpg');
+  
+  height: 600px;
+  width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  
+.hero__title {
+  color: var(--white-text);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  
+  max-width: 696px;
+  margin: 0 auto;
+  
+  text-transform: uppercase;
+}
+  
+.hero__button {
+  background: var(--back-blue);
+  color: var(--white-text);
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  
+  align-items: center;
+  text-align: center;
+  
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-top: 30px;
+  
+  cursor: pointer;
+  transition: color 250ms var(--cubic),
+    background-color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--white-text);
+    color: var(--back-blue);
+  }
+}

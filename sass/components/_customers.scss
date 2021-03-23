@@ -1,0 +1,43 @@
+// Regular customers
+.customers__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+  
+.customers__title {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+  
+.customers__list {
+  display: flex;
+  justify-content: space-between;
+}
+  
+.customers__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 170px;
+  height: 90px;
+ 
+  fill: var(--light-grey);
+  
+  border: 1px solid var(--light-grey);
+  box-sizing: border-box;
+  border-radius: 4px;
+  
+  transition: fill 250ms var(--cubic), border-color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--back-blue);
+    border: 1px solid var(--back-blue);
+  }
+}

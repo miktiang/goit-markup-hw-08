@@ -1,0 +1,46 @@
+// Advantages in index.html
+.advantages {
+  padding: 94px 0;
+}
+  
+.advantages__list {
+  flex-basis: calc(100% / 4 - 30px);
+  height: auto;
+  display: flex;
+}
+  
+.advantages__item:not(:last-child) {
+  margin-right: 30px;
+}
+  
+.advantager__icons {
+  width: 270px;
+  height: 120px;
+  
+  margin-bottom: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--back-light-grey);
+}
+  
+.advantages__title {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+  
+.advantages__description {
+  color: var(--grey-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,66 @@
+// Footer in index.html and portfolio.html
+.footer {
+  background: var(--back-light-black);
+    
+  height: 252px;
+  padding: 60px 0;
+}
+
+.footer__address{
+  display: flex;;
+  align-items: baseline;
+}
+  
+.footer__address-link {
+  margin-right: 70px;
+}
+  
+.footer--logo-white {
+  font-family: 'Raleway', sans-serif;
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+  
+.footer--logo-blue {
+  color: var(--back-blue);
+}
+  
+.footer__link {
+  margin-top: 20px;
+}
+  
+.footer__contacts-item:not(:first-child) {
+  margin-top: 9px;
+}
+  
+.footer__contacts-link--white {
+  color: var(--white-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--back-blue);
+  }
+}
+  
+.footer__contacts-link {
+  color: var(--grey-text-op60);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--back-blue);
+  }
+}

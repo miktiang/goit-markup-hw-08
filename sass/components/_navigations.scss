@@ -1,0 +1,85 @@
+// Site navigation in index.html and portfolio.html
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header--logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--black-text);
+}
+  
+.header--logo-blue {
+  color: var(--back-blue);
+}
+  
+.nav__link {
+  position: relative;
+  
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  
+  transition: color 250ms var(--cubic);
+}
+  
+.nav--current:visited {
+  color: var(--back-blue);
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+  
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--back-blue);
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+ 
+  width: 100%;
+  height: 4px;
+  
+  transform: translateY(29.5px);
+  transition: opacity 250ms var(--cubic);
+  
+  background-color: var(--back-blue);
+  border-radius: 2px;
+  
+  opacity: 0;
+}
+  
+.nav--current.nav__link::after {
+  opacity: 1;
+}
+  
+.nav__link-black:hover.nav__link::after {
+  opacity: 1;
+}

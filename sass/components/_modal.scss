@@ -1,0 +1,44 @@
+// Modal window
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  border-radius: 4px;
+  
+  transition: transform 250ms var(--cubic);
+  background-color: var(--white-text);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 30px;
+  height: 30px;
+  
+  background-color: var(--white-text);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  
+  border-radius: 50%;
+  
+  transition: fill 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--back-blue);
+  }
+}
