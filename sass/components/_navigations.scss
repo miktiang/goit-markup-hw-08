@@ -21,6 +21,25 @@
   color: var(--back-blue);
 }
   
+.header__button {
+  border: none;
+  background-color: var(--white-text);
+}
+
+.header__menu {
+  margin-left: auto;
+  color: var (--black-text);
+
+  &:hover,
+  &:focus {
+    fill: var(--back-blue);
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .nav__link {
   position: relative;
   

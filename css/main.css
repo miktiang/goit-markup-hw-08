@@ -1079,6 +1079,26 @@ button {
   color: var(--back-blue);
 }
 
+.header__button {
+  border: none;
+  background-color: var(--white-text);
+}
+
+.header__menu {
+  margin-left: auto;
+  color: var --black-text;
+}
+
+.header__menu:hover, .header__menu:focus {
+  fill: var(--back-blue);
+}
+
+@media (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
+
 .nav__link {
   position: relative;
   color: var(--black-text);
