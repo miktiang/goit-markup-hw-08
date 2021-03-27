@@ -1,8 +1,7 @@
 // Footer in index.html and portfolio.html
 .footer {
   background: var(--back-light-black);
-    
-  height: 252px;
+  // height: 603px;
   padding: 60px 0;
 }
 
@@ -62,5 +61,20 @@
   &:hover,
   &:focus {
     color: var(--back-blue);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .footer {
+    height: 463px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .footer {
+    width: 100vw;
+    height: 252px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

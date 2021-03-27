@@ -1,4 +1,18 @@
 // Site navigation in index.html and portfolio.html
+@media screen and (min-width: 768px) {
+  .header {
+    min-width: 768px;
+    height: 80px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    min-width: 1200px;
+  }
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -16,7 +30,14 @@
   line-height: 1.19;
   color: var(--black-text);
 }
-  
+
+@media screen and (min-width:1199px){
+  .header--logo{
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .header--logo-blue {
   color: var(--back-blue);
 }

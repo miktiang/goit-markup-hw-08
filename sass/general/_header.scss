@@ -47,29 +47,3 @@
 .header__contact-icon {
   margin-right: 10px;
 }
-
-.header__social-list {
-  display: flex;
-}
-
-.header__social-item:not(:last-child) {
-  margin-right: 10px;
-
-  ::after {
-    content: "";
-    width: 1px;
-    height: 22px;
-    display: block;
-    background: rgba(33, 33, 33, 0.2);
-    margin-left: 10px;
-  }
-}
-
-.header__social-link {
-  display: flex;
-}
-
-.header__social-link{
-  @include font(500, 18px, 1.222, 0.02em);
-  color: var(--back-blue);
-}

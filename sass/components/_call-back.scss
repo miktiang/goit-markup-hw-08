@@ -160,3 +160,38 @@
   background-color: var(--back-blue);
   fill: var(--back-blue);
 }
+
+@media screen and (min-width:480px){
+  .call-back__text {
+    margin-left: 7px;
+  }
+}
+
+@media screen and (min-width:480px){
+  .modal {
+    min-width: 450px;
+  }
+ 
+  .call-back__input {
+    min-width: 370px;
+  }
+
+  .call-back__textarea {
+    min-width: 370px;
+  }
+}
+  
+@media screen and (min-width:1200px){
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
+  .call-back__text {
+    font-size: 14px;
+  }
+
+  .call-back--terms {
+    font-size: 14px;
+  }
+}

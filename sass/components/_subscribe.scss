@@ -44,7 +44,19 @@
 .subscribe-form__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-  
+
+@media screen and (min-width:480px){
+  .subscribe-form__input {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .subscribe-form__input {
+    min-width: 358px;
+  }
+}
+
 .subscribe-form__btn {
   display: flex;
   align-items: center;

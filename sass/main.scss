@@ -3,9 +3,9 @@
 @import 'base/visually-hidden';
 @import 'utils/variables';
 @import 'utils/breakpoints';
+@import 'utils/mixin';
 @import 'general/footer';
 @import 'general/header';
-@import 'general/headings';
 @import 'general/portfolio';
 @import 'components/about-us';
 @import 'components/advantages';
@@ -21,3 +21,4 @@
 @import 'components/subscribe';
 @import 'components/team-icons';
 @import 'components/team';
+@import 'components/mobile-menu';

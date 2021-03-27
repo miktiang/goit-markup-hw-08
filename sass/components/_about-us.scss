@@ -1,8 +1,27 @@
 // About us in index.html
 .about-us {
+  display: none;
   padding-bottom: 94px;
 }
-  
+
+@media screen and (min-width:1200px){
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.about-us__title {
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .about-us__list {
   display: flex;
   margin-left: -30px;

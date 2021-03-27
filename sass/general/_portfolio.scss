@@ -4,10 +4,10 @@
   padding: 94px 15px;
 }
   
-.filters {
+.filters__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
   
 .filters__item:not(:first-child) {

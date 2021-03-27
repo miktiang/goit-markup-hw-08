@@ -41,3 +41,40 @@
     border: 1px solid var(--back-blue);
   }
 }
+
+@media screen and(min-width:480px) {
+  .customers__list {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+  }
+}    
+
+@media screen and(max-width:1199px) {
+  .customers__item {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .customers {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+    &__link {
+      width: 170px;
+      height: 90px;
+    }
+  
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+
+}
