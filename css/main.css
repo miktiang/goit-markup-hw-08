@@ -304,6 +304,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -716,6 +717,18 @@ button {
   transition: -webkit-box-shadow 250ms var(--cubic);
   transition: box-shadow 250ms var(--cubic);
   transition: box-shadow 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+}
+
+@media screen and (min-width: 768px) {
+  .project__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .project__link:hover, .project__link:focus {
@@ -1614,9 +1627,9 @@ button {
 }
 
 .mobile__item {
+  color: var(--black-text);
   font-size: 40px;
   line-height: 1.18;
-  color: var(--black-text);
 }
 
 .mobile__item:not(:first-child) {
@@ -1665,6 +1678,7 @@ button {
 }
 
 .mobile-social__item {
+  color: var(--back-blue);
   font-size: 18px;
   line-height: 1.22;
 }

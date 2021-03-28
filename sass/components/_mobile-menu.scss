@@ -48,13 +48,13 @@
 }
 
 .mobile__item {
+  color: var(--black-text);
+  font-size: 40px;
+  line-height: 1.18;
+
   &:not(:first-child) {
     margin-top: 32px;
   }
-
-  font-size: 40px;
-  line-height: 1.18;
-  color: var(--black-text);
 
   &:hover,
   &:focus {
@@ -99,6 +99,7 @@
 }
 
 .mobile-social__item {
+  color: var(--back-blue);
   font-size: 18px;
   line-height: 1.22;
 
