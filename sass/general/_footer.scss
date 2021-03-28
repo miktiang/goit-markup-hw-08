@@ -13,6 +13,10 @@
   color: var(--back-blue);
 }
 
+.footer__container {
+  align-items: baseline;
+}
+
 // Footer address
 .footer__contacts-link--white,
 .footer__contacts-link {
@@ -29,13 +33,14 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: var(--back-blue);
     }
   }
 }
 
 .footer__contacts-link--white {
   color: var(--white-text);
+  margin-top: 20px;
 }
 
 .footer__contacts-link {
@@ -43,20 +48,14 @@
   @include transition(color);
 }
 
-.footer__contacts-item:nth-child(2) {
-  margin-top: 20px;
-}
-
 @media screen and (min-width: 320px) {
-  .footer__contacts-list,
-  .footer__contacts-item:nth-child(2) {
+  .footer__contacts-item + .footer__contacts-item {
     margin-top: 8px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer__contacts-list,
-  .footer__contacts-item:nth-child(2) {
+  .footer__contacts-item + .footer__contacts-item {
     margin-top: 9px;
   }
 }

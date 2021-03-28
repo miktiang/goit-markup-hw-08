@@ -57,23 +57,22 @@
 }
 
 .subscribe-form__input::-webkit-input-placeholder {
-  color: var (--grey-text-op60);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-form__btn {
   display: flex;
   align-items: center;
-
   margin: 20px auto 0 auto;
   padding-top: 10px;
   padding-right: 28px;
   padding-bottom: 10px;
   padding-left: 29px;
-
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  cursor: pointer;
 
   color: var(--white-text);
   background-color: var(--back-blue);
@@ -86,4 +85,8 @@
     background-color: var(--white-text);
     color: var(--back-blue);
   }
+}
+
+.subscribe-form__icon {
+  margin-left: 10px;
 }

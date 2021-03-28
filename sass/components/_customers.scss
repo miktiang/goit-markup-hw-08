@@ -36,12 +36,12 @@
 
   border: 1px solid;
   border-radius: 4px;
-  border-color: var(--social-links-grey);
-  fill: var(--social-links-grey);
+  border-color: var(--light-grey);
+  fill: var(--light-grey);
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+    fill: var(--back-blue);
+    border-color: var(--back-blue);
   }
 }

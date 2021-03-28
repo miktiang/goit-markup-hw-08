@@ -9,21 +9,17 @@
   @media screen and (max-width: 767px) {
     padding: 10px 0 10px 0;
   }
-
-  @media screen and (min-width: 768px) {
-    padding: 21px 0 21px 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding: 24px 0 25px 0;
-  }
 }
 
 .logo {
   font-family: 'raleway', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 1.174;
+}
+
+.header--logo-blue {
+  color: var(--back-blue);
 }
 
 .header--logo {
@@ -139,6 +135,6 @@
     margin: 0 0 10px 0;
   }
   @media screen and (min-width: 1200px) {
-    margin: 0 30px 0 0;
+    margin: 0;
   }
 }
