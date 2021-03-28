@@ -1,14 +1,14 @@
+// Mobile-menu
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 4;
   height: 100vh;
   width: 100vw;
   padding: 48px 15px 48px 40px;
 
-  overflow-y: scroll;
   transform: translateX(100%);
-  z-index: 4;
 
   &.is-open {
     transform: translateX(0%);
@@ -19,13 +19,16 @@
   background-color: var(--white-text);
 
   @include transition(transform);
-}
 
-@media screen and (min-width: 768px) {
-  .mobile-menu,
-  .mobile-menu__close-btn {
+  @media screen and(min-width:768px) {
     display: none;
   }
+}
+
+.mobile-menu__container {
+  position: absolute;
+  top: 48px;
+  left: 40px;
 }
 
 .mobile-menu__close-btn {
@@ -67,7 +70,7 @@
   margin-top: 302px;
   font-size: 34px;
   line-height: 1.18;
-  color: var(--black-text);
+  color: var(--back-blue);
 }
 
 .mobile-contacts__mail {

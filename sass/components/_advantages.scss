@@ -1,82 +1,45 @@
-// Advantages in index.html
-.advantages {
-  padding: 94px 0;
-}
-  
+// Advantages
 .advantages__list {
-  flex-basis: calc(100% / 4 - 30px);
-  height: auto;
-  display: flex;
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-  
-.advantages__item:not(:last-child) {
-  margin-right: 30px;
-}
-  
-.advantager__icons {
-  width: 270px;
+
+.advantages__thumb {
   height: 120px;
-  
-  margin-bottom: 30px;
-  
   display: flex;
   justify-content: center;
   align-items: center;
-  
   background-color: var(--back-light-grey);
 }
-  
-.advantages__title {
-  color: var(--black-text);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  
-  text-transform: uppercase;
-  margin-bottom: 10px;
+
+.advantages__item {
+  &:not(:first-of-type) {
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - (2 * 30px)) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (4 * 30px)) / 4);
+    margin: 15px;
+  }
 }
-  
+
+.advantages__icons {
+  color: var(--black-text);
+}
+
 .advantages__description {
-  color: var(--grey-text);
-  font-weight: 400;
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-@media screen and (min-width:768px) {
-  .advantages {
-    &__list{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    &__item{
-      width: 354px;
-      height: 251px;
-    }
-  
-    &__title {
-      text-align: start; 
-    }
-  }
-}
-
-@media screen and (min-width:1200px) {
-  .advantages {
-    margin-top: 94px;
-    margin-bottom: 94px;
-   
-    &__list{
-      margin-bottom: 94px;
-    }
-  
-    &__item{
-      width: 270px;
-      height: 251px;
-    }
-  }
+  text-align: left;
 }

@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-   <!-- Header -->
-   <header class="header">
+  <!-- Header -->
+  <header class="header">
     <div class="container header__container">
         <nav class="header__navigation">
-            <a href="./index.html" class="header--logo"><span class="header--logo-blue">Web</span>Studio</a>
+            <a href="./index.html" class="logo header--logo"><span class="header--logo-blue">Web</span>Studio</a>
             <button class="header__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu>
                 <svg class="header__menu" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use href="./images/icons.svg#menu"></use>
                 </svg>
             </button>
-            <ul class="nav-list">
+            <ul class="nav__list">
                 <li class="nav__item">
                     <a href="./index.html" class="nav__link">Студия</a>
                 </li>
@@ -40,7 +40,7 @@
                 </li>
                 <li class="header__contact-item">
                     <a href="tel:+380961111111" class="header__contact-link">
-                        <svg class="header__contact-icon" width="10" height="16">
+                        <svg class="header__contact-icon--phone" width="10" height="16">
                             <use href="./images/icons.svg#phone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -69,6 +69,7 @@
                         <button class="filters__button">Маркетинг</button>
                     </li>
                 </ul>
+                <div class="project__container">
                 <ul class="project__list">
                     <li class="project__item">
                         <a href="#" class="project__link">
@@ -80,17 +81,17 @@
                                                     ./images/portfolio/tehnocrack-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/tehnocrack-desk.jpg 1x, 
                                                     ./images/portfolio/tehnocrack-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/tehnocrack-mob.jpg" alt="technocrack" width="370">
+                                    <img class="project__img" src="./images/portfolio/tehnocrack-mob.jpg" alt="technocrack" width="370">
                                 </picture>
-                                    <div class="project-list__overlay">
-                                        <p class="project-list__text">
-                                        Технокряк это современная площадка распространения
-                                        коронавируса. Компании используют эту платформу для
-                                        цифрового шпионажа и атак на защищённые сервера
-                                        конкурентов.
-                                        </p>
-                                    </div>
+                            <div class="project-list__overlay">
+                                <p class="project-list__text">
+                                Технокряк это современная площадка распространения
+                                коронавируса. Компании используют эту платформу для
+                                цифрового шпионажа и атак на защищённые сервера
+                                конкурентов.
+                                </p>
                             </div>
+                        </div>
                              <div class="project__content">
                                 <h2 class="project__title">Технокряк</h2>
                                 <p class="project__type">Веб-сайт</p>
@@ -107,7 +108,7 @@
                                                     ./images/portfolio/poster-new-orlean-vs-golden-star-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/poster-new-orlean-vs-golden-star-desk.jpg 1x, 
                                                     ./images/portfolio/poster-new-orlean-vs-golden-star-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/poster-new-orlean-vs-golden-star-mob.jpg" alt="poster-new-orlean-vs-golden-star" width="370">
+                                    <img class="project__img" src="./images/portfolio/poster-new-orlean-vs-golden-star-mob.jpg" alt="poster-new-orlean-vs-golden-star" width="370">
                                 </picture>
                                     <div class="project-list__overlay">
                                         <p class="project-list__text">
@@ -134,7 +135,7 @@
                                                     ./images/portfolio/restaurant-seafood-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/restaurant-seafood-desk.jpg 1x, 
                                                     ./images/portfolio/restaurant-seafood-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/restaurant-seafood-mob.jpg" alt="restaurant-seafood" width="370">
+                                    <img class="project__img" src="./images/portfolio/restaurant-seafood-mob.jpg" alt="restaurant-seafood" width="370">
                                 </picture>
                                      <div class="project-list__overlay">
                                         <p class="project-list__text">
@@ -161,7 +162,7 @@
                                                     ./images/portfolio/project-prime-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/project-prime-desk.jpg 1x, 
                                                     ./images/portfolio/project-prime-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/project-prime-mob.jpg" alt="project-prime" width="370">
+                                    <img class="project__img" src="./images/portfolio/project-prime-mob.jpg" alt="project-prime" width="370">
                                 </picture>
                                     <div class="project-list__overlay">
                                         <p class="project-list__text">
@@ -188,7 +189,7 @@
                                                     ./images/portfolio/project-boxes-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/project-boxes-desk.jpg 1x, 
                                                     ./images/portfolio/project-boxes-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/project-boxes-mob.jpg" alt="project-boxes" width="370">
+                                    <img class="project__img" src="./images/portfolio/project-boxes-mob.jpg" alt="project-boxes" width="370">
                                 </picture>
                                     <div class="project-list__overlay">
                                         <p class="project-list__text">
@@ -215,7 +216,7 @@
                                                     ./images/portfolio/inspiration-has-no-borders-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/inspiration-has-no-borders-desk.jpg 1x, 
                                                     ./images/portfolio/inspiration-has-no-borders-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/inspiration-has-no-borders-mob.jpg" alt="inspiration-has-no-borders" width="370">
+                                    <img class="project__img" src="./images/portfolio/inspiration-has-no-borders-mob.jpg" alt="inspiration-has-no-borders" width="370">
                                 </picture>
                                     <div class="project-list__overlay">
                                         <p class="project-list__text">
@@ -242,7 +243,7 @@
                                                     ./images/portfolio/limited-edition-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/limited-edition-desk.jpg 1x, 
                                                     ./images/portfolio/limited-edition-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/limited-edition-mob.jpg" alt="limited-edition" width="370">
+                                    <img class="project__img" src="./images/portfolio/limited-edition-mob.jpg" alt="limited-edition" width="370">
                                 </picture>
                                     <div class="project-list__overlay">
                                         <p class="project-list__text">
@@ -269,7 +270,7 @@
                                                     ./images/portfolio/project-lab-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/project-lab-desk.jpg 1x, 
                                                     ./images/portfolio/project-lab-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/project-lab-mob.jpg" alt="project-lab" width="370">
+                                    <img class="project__img" src="./images/portfolio/project-lab-mob.jpg" alt="project-lab" width="370">
                                 </picture>
                                     <div class="project-list__overlay">
                                         <p class="project-list__text">
@@ -296,7 +297,7 @@
                                                     ./images/portfolio/growing-business-tabl-2x.jpg 2x" media="(max-width: 1199px)">
                                     <source srcset="./images/portfolio/growing-business-desk.jpg 1x, 
                                                     ./images/portfolio/growing-business-desk-2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img src="./images/portfolio/growing-business-mob.jpg" alt="growing-business" width="370">
+                                    <img class="project__img" src="./images/portfolio/growing-business-mob.jpg" alt="growing-business" width="370">
                                 </picture>
                                     <div class="project-list__overlay">
                                         <p class="project-list__text">
@@ -315,75 +316,76 @@
                     </li>
                 </ul>
             </div>
+        </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer__address">
-            <div class="footer__address-link">
-            <a href="./index.html" class="footer--logo-white"><span class="footer--logo-blue">Web</span>Studio</a>
-            <address class="footer__link">
-                <ul class="footer__contacts-list">
-                    <li class="footer__contacts-item">
-                        <a href="#" class="footer__contacts-link--white">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li class="footer__contacts-item">
-                        <a href="mailto:info@example.com" class="footer__contacts-link">info@example.com</a>
-                    </li>
-                    <li class="footer__contacts-item">
-                        <a href="tel:+380991111111" class="footer__contacts-link">+38 099 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__address">
+        <a href="./index.html" class="logo footer--logo-white"><span class="footer--logo-blue">Web</span>Studio</a>
+        <address class="footer__link">
+            <ul class="footer__contacts-list">
+                <li class="footer__contacts-item">
+                    <a href="#" class="footer__contacts-link--white">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="footer__contacts-item">
+                    <a href="mailto:info@example.com" class="footer__contacts-link">info@example.com</a>
+                </li>
+                <li class="footer__contacts-item">
+                    <a href="tel:+380991111111" class="footer__contacts-link">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+    </div>
+        <div class="join">
+            <h2 class="join__title">присоединяйтесь</h2>
+            <ul class="join__list">
+                <li class="join__item">
+                    <a class="join__link" href="#">
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li  class="join__item">
+                    <a class="join__link" href="#">
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join__item">
+                    <a class="join__link" href="#">
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join__item">
+                    <a class="join__link" href="#">
+                        <svg width="20" height="20">
+                            <use href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
-            <div class="join">
-                <h2 class="join__title">присоединяйтесь</h2>
-                <ul class="join__list">
-                    <li class="join__item">
-                        <a class="join__link" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li  class="join__item">
-                        <a class="join__link" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a class="join__link" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a class="join__link" href="#">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Subscribe form -->
-        <form class="subscribe-form">
-            <label class="subscribe-form__label">
-              Подпишитесь на рассылку
-              <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail"/>
-            </label>
-            <button type="submit" class="subscribe-form__btn">
-              Подписаться
-              <svg width="24" height="24" class="subscribe-form__icon">
-                <use href="./images/icons.svg#telegram"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-    </footer>
+        <!-- Subscribe form -->
+    <form class="subscribe-form">
+        <label class="subscribe-form__label">
+          Подпишитесь на рассылку
+          <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail"/>
+        </label>
+        <button type="submit" class="subscribe-form__btn">
+          Подписаться
+          <svg width="24" height="24" class="subscribe-form__icon">
+            <use href="./images/icons.svg#telegram"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+</footer>
     <!-- Mobile menu -->
     <div class="mobile-menu js-menu-container" id="mobile-menu">
         <button class="mobile-menu__close-btn js-close-menu">
@@ -414,8 +416,7 @@
     <!-- Script -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
   <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

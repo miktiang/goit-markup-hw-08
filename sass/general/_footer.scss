@@ -1,80 +1,62 @@
-// Footer in index.html and portfolio.html
+// Footer
 .footer {
-  background: var(--back-light-black);
-  // height: 603px;
-  padding: 60px 0;
+  background-color: var(--back-light-black);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer__address{
-  display: flex;;
-  align-items: baseline;
-}
-  
-.footer__address-link {
-  margin-right: 70px;
-}
-  
 .footer--logo-white {
-  font-family: 'Raleway', sans-serif;
   color: var(--white-text);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
-  
+
 .footer--logo-blue {
   color: var(--back-blue);
 }
-  
-.footer__link {
-  margin-top: 20px;
+
+// Footer address
+.footer__contacts-link--white,
+.footer__contacts-link {
+  display: block;
+  font-size: 14px;
+  line-height: 1.7;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 }
-  
-.footer__contacts-item:not(:first-child) {
-  margin-top: 9px;
-}
-  
+
 .footer__contacts-link--white {
   color: var(--white-text);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  
-  transition: color 250ms var(--cubic);
-
-  &:hover,
-  &:focus {
-    color: var(--back-blue);
-  }
 }
-  
+
 .footer__contacts-link {
   color: var(--grey-text-op60);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  
-  transition: color 250ms var(--cubic);
+  @include transition(color);
+}
 
-  &:hover,
-  &:focus {
-    color: var(--back-blue);
+.footer__contacts-item:nth-child(2) {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer__contacts-list,
+  .footer__contacts-item:nth-child(2) {
+    margin-top: 8px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .footer {
-    height: 463px;
-  }
-}
-
-@media screen and (min-width:1200px) {
-  .footer {
-    width: 100vw;
-    height: 252px;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .footer__contacts-list,
+  .footer__contacts-item:nth-child(2) {
+    margin-top: 9px;
   }
 }

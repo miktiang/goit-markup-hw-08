@@ -1,0 +1,72 @@
+// Contacts
+.header__contact-list {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.header__contact-item {
+  align-items: center;
+  display: flex;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 10px;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 30px;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    &:last-child {
+      padding: 0;
+    }
+  }
+}
+
+.header__contact-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--grey-text);
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--back-blue);
+  }
+  @media (min-width: $desktop) {
+    font-size: 14px;
+  }
+}
+
+.header__contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
+
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+}

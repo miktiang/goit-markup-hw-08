@@ -1,16 +1,21 @@
-// Modal window
+// // Modal window
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  min-width: 528px;
-  min-height: 581px;
+  @include absolute-centered(true, true);
+
   padding: 40px;
+  min-width: 100%;
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 528px;
+  }
+
+  @include transition(transform);
+
   border-radius: 4px;
-  
-  transition: transform 250ms var(--cubic);
   background-color: var(--white-text);
 
   .backdrop.is-hidden & {
@@ -22,20 +27,16 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  width: 30px;
+
+  @include flex-centered(center, center);
+
   height: 30px;
-  
+  width: 30px;
+
   background-color: var(--white-text);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  
   border-radius: 50%;
-  
-  transition: fill 250ms var(--cubic);
+  @include transition(fill);
 
   &:hover,
   &:focus {

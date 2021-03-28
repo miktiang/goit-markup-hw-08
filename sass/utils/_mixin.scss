@@ -1,20 +1,47 @@
+// transform mixin
+
 @mixin transition($props...) {
   $result: ();
-  
+
   @for $i from 1 through length($props) {
     $prop: nth($props, $i);
     $result: append($result, $prop);
     $result: append($result, 250ms var(--cubic));
-  
+
     @if $i != length($props) {
       $result: append(
-          $result,
-          unquote(
-            $string: ',',
-          )
-        );
+        $result,
+        unquote(
+          $string: ',',
+        )
+      );
     }
   }
-  
+
   transition: $result;
+}
+
+// Centered absolute
+
+@mixin absolute-centered($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+// Centered flex
+
+@mixin flex-centered($justify, $align) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
 }

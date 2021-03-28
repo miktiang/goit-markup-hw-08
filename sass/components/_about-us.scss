@@ -1,60 +1,45 @@
-// About us in index.html
-.about-us {
-  display: none;
-  padding-bottom: 94px;
-}
+// About us
+.about-us__list {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
-@media screen and (min-width:1200px){
-  .about-us {
+  @media screen and (min-width: 1200px) {
     display: flex;
+    margin: -15px;
+
     flex-wrap: wrap;
   }
 }
 
-.about-us__title {
-  color: var(--black-text);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.about-us__list {
-  display: flex;
-  margin-left: -30px;
-}
-  
 .about-us__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+  flex-basis: calc((100% - (6 * 15px)) / 3);
+  margin: 15px;
 }
-  
+
 .about-us__thumb {
   position: relative;
   overflow: hidden;
 }
-  
-.about-us__text {
+
+.about-us__overlay {
   position: absolute;
-  bottom: 0;
   left: 0;
-  
-  display: inline-block;
-  text-align: center;
+  bottom: 0;
+
   width: 100%;
-  padding: 27px;
-  
-  color: var(--white-text);
-  font-weight: 700;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: var (--back-light-black-op80);
+}
+
+.about-us__text {
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
-  
-  background: var(--back-light-black-op80);
+
+  color: var(--white-text);
 }
-  

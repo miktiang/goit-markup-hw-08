@@ -1,80 +1,47 @@
 // Regular customers
-.customers__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-  
-.customers__title {
-  color: var(--black-text);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-  
 .customers__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: -15px;
 }
-  
+
+.customers__item {
+  flex-basis: calc((100% - (2 * 30px)) / 2);
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - (3 * 30px)) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - (6 * 30px)) / 6);
+  }
+}
+
 .customers__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  width: 170px;
+  @include flex-centered(center, center);
+  @include transition(fill, border-color);
+
+  max-width: 210px;
   height: 90px;
- 
-  fill: var(--light-grey);
-  
-  border: 1px solid var(--light-grey);
-  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    max-width: 230px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 170px;
+  }
+
+  border: 1px solid;
   border-radius: 4px;
-  
-  transition: fill 250ms var(--cubic), border-color 250ms var(--cubic);
+  border-color: var(--social-links-grey);
+  fill: var(--social-links-grey);
 
   &:hover,
   &:focus {
-    fill: var(--back-blue);
-    border: 1px solid var(--back-blue);
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
   }
-}
-
-@media screen and(min-width:480px) {
-  .customers__list {
-    margin-left: 0;
-    margin-right: 0;
-    justify-content: space-between;
-  }
-}    
-
-@media screen and(max-width:1199px) {
-  .customers__item {
-    margin-top: 30px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .customers {
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width:1200px) {
-  .customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  
-    &__link {
-      width: 170px;
-      height: 90px;
-    }
-  
-    &__title {
-      margin-bottom: 50px;
-    }
-  }
-
 }

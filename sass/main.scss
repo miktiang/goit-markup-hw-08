@@ -1,24 +1,29 @@
 @import 'base/modern-normalize';
 @import 'base/basic-styles';
 @import 'base/visually-hidden';
+
 @import 'utils/variables';
 @import 'utils/breakpoints';
 @import 'utils/mixin';
+
 @import 'general/footer';
 @import 'general/header';
 @import 'general/portfolio';
+
 @import 'components/about-us';
 @import 'components/advantages';
 @import 'components/backdrop';
 @import 'components/call-back';
+@import 'components/contacts';
 @import 'components/container';
 @import 'components/customers';
+@import 'components/headings';
 @import 'components/hero';
 @import 'components/join';
+@import 'components/mobile-menu';
 @import 'components/modal';
 @import 'components/navigations';
 @import 'components/overlay';
+@import 'components/sections';
 @import 'components/subscribe';
-@import 'components/team-icons';
 @import 'components/team';
-@import 'components/mobile-menu';

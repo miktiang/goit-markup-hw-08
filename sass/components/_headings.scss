@@ -1,0 +1,73 @@
+.hero__title {
+  padding-top: 118px;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 200px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.advantages__title {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--black-text);
+}
+
+.about-us__title {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.team__title,
+.customers__title,
+.about-us__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--black-text);
+}
+
+.customers__title {
+  margin-bottom: 30px;
+}
+
+.team__title {
+  @media screen and(min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.about-us__title,
+.team__title,
+.customers__title {
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
+
+.join__title {
+  margin-top: 60px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text);
+
+  @media screen and(min-width: 768px) {
+    margin-top: 0;
+  }
+}
