@@ -26,7 +26,7 @@
 }
 
 .mobile-menu__container {
-  position: absolute;
+  position: fixed;
   top: 48px;
   left: 40px;
 }
@@ -64,6 +64,10 @@
 
 .mobile__item--current {
   color: var(--back-blue);
+}
+
+.mobile-contacts__list {
+  display: block;
 }
 
 .mobile-contacts__phone {
