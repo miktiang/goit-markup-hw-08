@@ -22,8 +22,6 @@
   display: flex;
 
   @media (min-width: $tablet) {
-    padding-bottom: 10px;
-
     &:last-child {
       padding: 0;
     }

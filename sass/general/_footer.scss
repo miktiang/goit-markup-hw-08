@@ -17,6 +17,10 @@
   align-items: baseline;
 }
 
+.footer__link {
+  margin-top: 20px;
+}
+
 // Footer address
 .footer__contacts-link--white,
 .footer__contacts-link {
@@ -40,7 +44,6 @@
 
 .footer__contacts-link--white {
   color: var(--white-text);
-  margin-top: 20px;
 }
 
 .footer__contacts-link {

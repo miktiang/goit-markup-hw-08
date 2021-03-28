@@ -26,6 +26,10 @@
   }
 }
 
+.filters__item:last-child {
+  margin-right: 0;
+}
+
 .filters__button {
   padding: 6px 22px;
 
@@ -52,7 +56,6 @@
 .project__list {
   @media screen and (min-width: 768px) {
     display: flex;
-
     flex-wrap: wrap;
     margin: -15px;
   }
@@ -72,9 +75,13 @@
   }
 }
 
-.project__link {
-  display: block;
+@media screen and (max-width: 767px) {
+  .project__item:first-child {
+    margin-top: 0;
+  }
+}
 
+.project__link {
   @include transition(box-shadow);
 
   &:hover,
